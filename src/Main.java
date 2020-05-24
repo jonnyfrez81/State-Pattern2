@@ -1,9 +1,19 @@
 public class Main {
 
     public static void main(String[] args) {
-        var canvas = new Canvas();
-        canvas.setCurrentTool(new EraserTool());
-        canvas.mouseDown();
-        canvas.mouseUp();
+        var ETA = new Direction();
+
+        ETA.setTransportation(new Car());
+        ETA.setValues();
+        System.out.println(ETA.toString());
+
+        ETA.setTransportation(new Transit());
+        ETA.setValues();
+        System.out.println(ETA.toString());
+
+        ETA.setTransportation(new Walking());
+        ETA.setValues();
+        System.out.println(ETA.toString());
+
     }
 }
