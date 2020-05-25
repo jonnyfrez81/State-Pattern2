@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        var ETA = new Direction();
+        var ETA = new DirectionService();
 
         ETA.setTransportation(new Car());
         ETA.setValues();
